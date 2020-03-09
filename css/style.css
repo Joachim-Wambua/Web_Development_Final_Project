@@ -7,6 +7,210 @@
 }
 
 
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Raleway, sans-serif;
+}
+
+
+/*---------------------------------------------*/
+
+a {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*---------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+p {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+ul,
+li {
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+
+input {
+    outline: thin;
+    border: medium;
+}
+
+textarea {
+    outline: thin;
+    border: medium;
+}
+
+textarea:focus,
+input:focus {
+    border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+input::-webkit-input-placeholder {
+    font-family: Raleway-Medium;
+    color: #555555;
+}
+
+input:-moz-placeholder {
+    font-family: Raleway-Medium;
+    color: #555555;
+}
+
+input::-moz-placeholder {
+    font-family: Raleway-Medium;
+    color: #555555;
+}
+
+input:-ms-input-placeholder {
+    font-family: Raleway-Medium;
+    color: #555555;
+}
+
+textarea::-webkit-input-placeholder {
+    font-family: Raleway-Medium;
+    color: #555555;
+}
+
+textarea:-moz-placeholder {
+    font-family: Raleway-Medium;
+    color: #555555;
+}
+
+textarea::-moz-placeholder {
+    font-family: Raleway-Medium;
+    color: #555555;
+}
+
+textarea:-ms-input-placeholder {
+    font-family: Raleway-Medium;
+    color: #555555;
+}
+
+
+/*---------------------------------------------*/
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+    align-content: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+
+/*---------------------------------------------*/
+
+.container {
+    max-width: 1200px;
+}
+
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 
 [data-icon]:before {
@@ -1898,4 +2102,1066 @@ you can use the generic selector below, but it's slower:
         width: auto;
         height: 100;
     }
+}
+
+
+/*==================================================================
+[ Form ]*/
+
+.contact100-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 68px;
+}
+
+.contact100-form-title {
+    display: block;
+    width: 100%;
+    font-family: Raleway-Bold;
+    font-size: 39px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 44px;
+}
+
+
+/*------------------------------------------------------------------
+  [ Input ]*/
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 13px;
+    margin-bottom: 65px;
+}
+
+.rs1-wrap-input100 {
+    width: calc((100% - 30px) / 2);
+}
+
+.label-input100 {
+    font-family: Raleway-Regular;
+    font-size: 15px;
+    color: #999999;
+    line-height: 1.5;
+    padding-left: 5px;
+}
+
+.input100 {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: Raleway-SemiBold;
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.2;
+    padding: 0 5px;
+}
+
+.focus-input100 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input100::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    background: #ff4b5a;
+}
+
+
+/*---------------------------------------------*/
+
+input.input100 {
+    height: 40px;
+}
+
+textarea.input100 {
+    min-height: 110px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+}
+
+.input100:focus+.focus-input100::before {
+    width: 100%;
+}
+
+.has-val.input100+.focus-input100::before {
+    width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+  [ Button ]*/
+
+.container-contact100-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -25px;
+}
+
+.contact100-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 50px;
+    background-color: #ff4b5a;
+    border-radius: 25px;
+    font-family: Raleway-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -moz-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -webkit-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -o-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -ms-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+}
+
+.contact100-form-btn i {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.contact100-form-btn:hover {
+    background-color: #333333;
+    box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+    -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+    -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+    -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+}
+
+.contact100-form-btn:hover i {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+
+/*------------------------------------------------------------------
+  [ Responsive ]*/
+
+@media (max-width: 992px) {
+    .wrap-contact100 {
+        padding: 82px 80px 33px 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rs1-wrap-input100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrap-contact100 {
+        padding: 82px 15px 33px 15px;
+    }
+}
+
+
+/*------------------------------------------------------------------
+  [ Alert validate ]*/
+
+.validate-input {
+    position: relative;
+}
+
+.alert-validate::before {
+    content: attr(data-validate);
+    position: absolute;
+    max-width: 70%;
+    background-color: #fff;
+    border: 1px solid #c80000;
+    border-radius: 2px;
+    padding: 4px 25px 4px 10px;
+    top: 58%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 2px;
+    pointer-events: none;
+    font-family: Raleway-Medium;
+    color: #c80000;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+    content: "\f06a";
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+    color: #c80000;
+    font-size: 16px;
+    top: 58%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 8px;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/*==================================================================
+  [ Contact more ]*/
+
+.contact100-more {
+    font-family: Raleway-Regular;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.5;
+}
+
+.contact100-more-highlight {
+    color: #ff4b5a;
+}
+
+
+/*==================================================================
+  [ Button hide form ]*/
+
+.contact100-btn-hide {
+    color: #333333;
+    font-size: 14px;
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    border-radius: 50%;
+    top: -15px;
+    right: -15px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.contact100-btn-hide:hover {
+    background-color: #333333;
+    color: #fff;
+}
+
+
+/*==================================================================
+  [ Button show form ]*/
+
+.contact100-btn-show {
+    color: #fff;
+    font-size: 39px;
+    position: fixed;
+    z-index: -1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contact100-btn-show::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background-color: #ff4b5a;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -moz-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -webkit-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -o-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -ms-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-animation: beatbtn 0.9s ease-in-out infinite;
+    animation: beatbtn 0.9s ease-in-out infinite;
+}
+
+@keyframes beatbtn {
+    0% {
+        background-color: rgba(255, 75, 90, 1);
+        transform-origin: center;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        background-color: rgba(255, 75, 90, 0.8);
+        transform-origin: center;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+
+/* Util FIle */
+
+.
+/* 
+
+/* ------------------------------------ */
+
+.flex-l {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-r {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-c {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-sa {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-sb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ------------------------------------ */
+
+.flex-t {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.flex-b {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.flex-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.flex-str {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: stretch;
+    align-items: stretch;
+}
+
+
+/* ------------------------------------ */
+
+.flex-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+}
+
+.flex-row-rev {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    -o-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.flex-col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-col-rev {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    -o-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+
+/* ------------------------------------ */
+
+.flex-c-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.flex-c-t {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.flex-c-b {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.flex-c-str {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: stretch;
+    align-items: stretch;
+}
+
+.flex-l-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-start;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.flex-r-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.flex-sa-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.flex-sb-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+/* ------------------------------------ */
+
+.flex-col-l {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.flex-col-r {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.flex-col-c {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.flex-col-l-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flex-col-r-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.flex-col-c-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col-str {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: stretch;
+    align-items: stretch;
+}
+
+.flex-col-sb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* ------------------------------------ */
+
+.flex-col-rev-l {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    -o-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.flex-col-rev-r {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    -o-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.flex-col-rev-c {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    -o-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.flex-col-rev-str {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    -o-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -ms-align-items: stretch;
+    align-items: stretch;
+}
+
+
+/*[ Absolute ]
+-----------------------------------------------------------
+*/
+
+.ab-c-m {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.ab-c-t {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.ab-c-b {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.ab-l-m {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.ab-r-m {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.ab-t-l {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.ab-t-r {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.ab-b-l {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.ab-b-r {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+/* Login form Area css
+============================================================================================ */
+
+.login_box_area .login_box_img {
+    margin-right: -30px;
+    position: relative;
+}
+
+.login_box_area .login_box_img .hover {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.login_box_area .login_box_img .hover h4 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.login_box_area .login_box_img .hover p {
+    max-width: 380px;
+    margin: 0px auto 25px;
+    color: #fff;
+}
+
+.login_box_area .login_box_img .hover .main_btn {
+    border-radius: 0px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+.login_form_inner {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
+    height: 100%;
+    text-align: center;
+    padding-top: 115px;
+}
+
+.login_form_inner h3 {
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.login_form_inner .login_form {
+    max-width: 385px;
+    margin: auto;
+}
+
+.login_form_inner.reg_form {
+    padding-top: 60px;
+}
+
+.login_form_inner.reg_form h3 {
+    margin-bottom: 70px;
+}
+
+.login_form .form-group input {
+    height: 54px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0px;
+    outline: none;
+    box-shadow: none;
+}
+
+.login_form .form-group .creat_account {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login_form .form-group .creat_account input {
+    height: auto;
+    margin-right: 10px;
+}
+
+.login_form .form-group .submit_btn {
+    display: block;
+    border-radius: 0px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.login_form .form-group a {
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    display: block;
+}
+
+
+/* End Login form Area css
+  ============================================================================================ */
+
+
+/* Tracking Form Area css
+  ============================================================================================ */
+
+.tracking_box_area .tracking_box_inner p {
+    max-width: 870px;
+    color: #222222;
+    margin-bottom: 25px;
+}
+
+.tracking_box_area .tracking_box_inner .tracking_form {
+    max-width: 645px;
+}
+
+.tracking_box_area .tracking_box_inner .tracking_form .form-group input {
+    height: 40px;
+    border: 1px solid #eee;
+    padding: 0px 15px;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0px;
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.tracking_box_area .tracking_box_inner .tracking_form .form-group input.placeholder {
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.tracking_box_area .tracking_box_inner .tracking_form .form-group input:-moz-placeholder {
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.tracking_box_area .tracking_box_inner .tracking_form .form-group input::-moz-placeholder {
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.tracking_box_area .tracking_box_inner .tracking_form .form-group input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+.tracking_box_area .tracking_box_inner .tracking_form .form-group:last-child {
+    margin-bottom: 0px;
+}
+
+.tracking_box_area .tracking_box_inner .tracking_form .form-group .submit_btn {
+    text-transform: uppercase;
 }

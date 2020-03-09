@@ -15,7 +15,29 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
 </head>
 
 <body>
@@ -96,11 +118,11 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcrumb-content text-center">
-                        <h2 class="page-title">About Us</h2>
+                        <h2 class="page-title">Contact</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
                                 <li class="breadcrumb-item"><a href="index.html"><i class="icon_house_alt"></i> Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">About</li>
+                                <li class="breadcrumb-item active" aria-current="page">Contact</li>
                             </ol>
                         </nav>
                     </div>
@@ -110,170 +132,106 @@
     </section>
     <!-- Breadcrumb Area End -->
 
-    <!-- About Us Area Start -->
-    <div class="about-us-area section-padding-80-0 clearfix">
+    <!-- Contact Area Start -->
+    <div class="contact-area section-padding-80-50">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-12 col-lg-6">
-                    <div class="about-us-content mb-80">
-                        <h3 class="wow fadeInUp" data-wow-delay="100ms">We Live To tell compelling Stories for visionary African brands</h3>
-                        <div class="line wow fadeInUp" data-wow-delay="200ms"></div>
-                        <p class="wow fadeInUp" data-wow-delay="300ms">Think was founded in 2019 and is a full-service creative agency with a niche focus in business re/branding using novel digital tools such as programming, digital marketing, as well as helping African brands tell their stories effectively.
-                        </p>
-                        <p class="wow fadeInUp" data-wow-delay="400ms">One of our most valuable assets exists in our team's ability to merge disruptive digital and artistic innovation efforts to accelerate our clients to reach their full potential, through launching or expanding into new markets,
-                            improving sales and crafting fortified brand awareness strategies. Ideally, our core purpose as an organization is to design experiences with the optimum purpose for the client's benefit..</p>
-                        <a class="btn alime-btn btn-2 mt-30 wow fadeInUp" data-wow-delay="500ms" href="#">Contact Us</a>
+                    <h2 class="contact-title mb-30">Want to Work <br>with Us?</h2>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!-- Contact Info -->
+                    <div class="contact-info mb-30">
+                        <p>Email</p>
+                        <a href="mailto:ethink19@gmail.com">ethink19@gmail.com</a>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="contact-info mb-30">
+                        <p>Call Us On</p>
+                        <a href="#">+254 719 417 307</a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="about-video-area mb-80 wow fadeInUp" data-wow-delay="100ms">
-                        <img src="img/bg-img/17.jpg" alt="">
-                        <div class="video-icon">
-                            <video id="videoBG" poster="img/kim_img/TedxImage.png">
-                                <source src="img/kim_img/14.mp4" type="video/mp4">
-                            </video>
-
-                        </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!-- Contact Info -->
+                    <div class="contact-info mb-30">
+                        <p>Visit Us</p>
+                        <a href="#">Kigali Heights, 2nd floor,KG 7 Ave, Kigali, Rwanda</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About Us Area End -->
+    <!-- Contact Area End -->
 
-    <!-- Why Choose Us Area Start -->
-    <section class="why-choose-us-area bg-gray section-padding-80-0 clearfix">
+    <!-- Contact Form Tab -->
+    <div class="container-contact100">
+        <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+        <button class="contact100-btn-show">
+			<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		</button>
+
+        <div class="wrap-contact100">
+            <button class="contact100-btn-hide">
+				<i class="fa fa-close" aria-hidden="true"></i>
+			</button>
+
+            <form class="contact100-form validate-form">
+                <span class="contact100-form-title">
+					Contact Us
+				</span>
+
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                    <span class="label-input100">Your Name</span>
+                    <input class="input100" type="text" name="name" placeholder="Enter your name">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <span class="label-input100">Email</span>
+                    <input class="input100" type="text" name="email" placeholder="Enter your email addess">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Message is required">
+                    <span class="label-input100">Message</span>
+                    <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+                </div>
+            </form>
+
+            <span class="contact100-more">
+				For any question contact our 24/7 call center: <span class="contact100-more-highlight">+254 719 417 307</span>
+            </span>
+        </div>
+    </div>
+
+
+
+    <div id="dropDownSelect1"></div>
+
+
+
+
+    <!-- Map Area Start -->
+    <div class="map-area section-padding-0-80">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                        <h2>Why Choose Us</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Single Why Choose Area -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="chosse-us-icon">
-                            <i class="fa fa-certificate" aria-hidden="true"></i>
-                        </div>
-                        <h4>Customer Satisfaction</h4>
-                        <p>Here at E-Think , we guarantee 100% commitment to any and every client. Our dedicated team is skilled in collaborating with different clients from different industries</p>
-                    </div>
-                </div>
-
-                <!-- Single Why Choose Area -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="chosse-us-icon">
-                            <i class="fa fa-briefcase" aria-hidden="true"></i>
-                        </div>
-                        <h4>Inclusive & Iterative Workflow</h4>
-                        <p>As we strive to give our clients the best of the best when it comes to brand design, our process also involves frequently reaching out to clients filling them in with the progress so far as well as collect feedback on the progress
-                            for more iteration</p>
-                    </div>
-                </div>
-
-                <!-- Single Why Choose Area -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="why-choose-us-content text-center mb-80 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="chosse-us-icon">
-                            <i class="fa fa-wre" aria-hidden="true"></i>
-                        </div>
-                        <h4>Modern Equipment</h4>
-                        <p>At E-Think, we are well equiped with some of the most recommended equipment and technology to help brands effectively tell their story</p>
-                    </div>
-                </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5021997266854!2d30.090651214666185!3d-1.9523724372658722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c61dab9a01d450f!2sAfrican%20Leadership%20University!5e0!3m2!1sen!2srw!4v1583749455358!5m2!1sen!2srw"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </div>
-    </section>
-    <!-- Why Choose  us Area End -->
-
-    <!-- Our Team Area Start -->
-    <section class="our-team-area section-padding-80-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
-                        <h2>Our Team</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Team Member Area -->
-                <div class="col-md-6 col-xl-3">
-                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="member-thumb">
-                            <img src="img/kim_img/Khan.jpeg" alt="">
-                        </div>
-                        <h5>Stephen Lei Anjelo Khan</h5>
-                        <span>Cheif Executive Officer</span>
-                        <div class="member-social-info">
-                            <a href="#"><i class="ti-facebook"></i></a>
-                            <a href="#"><i class="ti-twitter-alt"></i></a>
-                            <a href="#"><i class="ti-linkedin"></i></a>
-                            <a href="#"><i class="ti-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member Area -->
-                <div class="col-md-6 col-xl-3">
-                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="member-thumb">
-                            <img src="img/kim_img/Joachim_Wambua_Profile.jpg" alt="">
-                        </div>
-                        <h5>Joachim Wambua</h5>
-                        <span>Creative Director</span>
-                        <div class="member-social-info">
-                            <a href="#"><i class="ti-facebook"></i></a>
-                            <a href="#"><i class="ti-twitter-alt"></i></a>
-                            <a href="#"><i class="ti-linkedin"></i></a>
-                            <a href="#"><i class="ti-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member Area -->
-                <div class="col-md-6 col-xl-3">
-                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="member-thumb">
-                            <img src="img/kim_img/Manno_Profile.jpg" alt="">
-                        </div>
-                        <h5>Mannoakgotla Yame Medupe</h5>
-                        <span>Communcations Manager</span>
-                        <div class="member-social-info">
-                            <a href="#"><i class="ti-facebook"></i></a>
-                            <a href="#"><i class="ti-twitter-alt"></i></a>
-                            <a href="#"><i class="ti-linkedin"></i></a>
-                            <a href="#"><i class="ti-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Team Member Area -->
-                <div class="col-md-6 col-xl-3">
-                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="700ms">
-                        <div class="member-thumb">
-                            <img src="img/kim_img/Araka_Atoni_Profile.jpg" alt="">
-                        </div>
-                        <h5>Atoni Araka</h5>
-                        <span>Marketing Lead</span>
-                        <div class="member-social-info">
-                            <a href="#"><i class="ti-facebook"></i></a>
-                            <a href="#"><i class="ti-twitter-alt"></i></a>
-                            <a href="#"><i class="ti-linkedin"></i></a>
-                            <a href="#"><i class="ti-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our Team Area End -->
+    </div>
+    <!-- Map Area End -->
 
     <!-- Follow Area Start -->
     <section class="follow-area clearfix">
@@ -372,8 +330,8 @@
                             </p>
                         </div>
                         <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                        <div class="footer-logo ">
+                            <a href="# "><img src="img/core-img/ColoredEthinkLogo.png" alt=" "></a>
                         </div>
                         <!-- Social Info -->
                         <div class="social-info">
@@ -390,7 +348,7 @@
     <!-- Footer Area End -->
 
     <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
+    <!-- jQuery 2.2.4 -->w
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->
     <script src="js/popper.min.js"></script>
@@ -400,7 +358,27 @@
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+    <script src="js/map-custom.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
 
 </body>
 
-</html> m
+</html>
